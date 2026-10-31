@@ -7,7 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="125*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="622*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="окружность" FontWeight="Bold" FontSize="16" Margin="10,10,10,10" Grid.Column="1"/>
+        <TextBox Name="ForX" Grid.Column="1" Margin="10,10,10,10" Grid.Row="1" Text="X координаты:" Foreground="LightGray" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox Name="ForY" Grid.Column="1" Margin="10,10,10,10" Grid.Row="2" Text="У координаты:" Foreground="LightGray" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox Name="Radiys" Grid.Column="1" Margin="10,10,10,10" Grid.Row="3" Text="Радиус:" Foreground="LightGray" FontSize="14" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

@@ -31,14 +31,20 @@ namespace PR7
             var round = new Round(Color: Brushes.DarkKhaki, radiys: 50, myCanvas);
             round.Draw();
 
-            var trangl = new Trangl(Color: Brushes.Brown, myCanvas, 
+            var trangl = new Trangl(Color: Brushes.Brown, myCanvas,
                 p1: new Point(50, 150), p2: new Point(150, 50), p3: new Point(250, 150));
             trangl.Draw();
             // Показываем Canvas как содержимое окна
             this.Content = myCanvas;
 
-           
 
+
+        }
+
+        
+        private void getFigur(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
