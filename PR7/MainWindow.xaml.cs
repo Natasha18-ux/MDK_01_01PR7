@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PR7.classes;
 
 namespace PR7
 {
@@ -24,19 +25,20 @@ namespace PR7
         {
             InitializeComponent();
             Canvas myCanvas = new Canvas();
-            myCanvas.Width = 300;
-            myCanvas.Height = 300;
+            myCanvas.Width = 450;
+            myCanvas.Height = 450;
 
-            Rectangle rect = new Rectangle();
-            rect.Width = 100;
-            rect.Height = 60;
-            rect.Fill = Brushes.LightCoral;
-           
+            var round = new Round(Color: Brushes.DarkKhaki, radiys: 50, myCanvas);
+            round.Draw();
 
-            myCanvas.Children.Add(rect);
-
+            var trangl = new Trangl(Color: Brushes.Brown, myCanvas, 
+                p1: new Point(50, 150), p2: new Point(150, 50), p3: new Point(250, 150));
+            trangl.Draw();
             // Показываем Canvas как содержимое окна
             this.Content = myCanvas;
+
+           
+
         }
     }
 }

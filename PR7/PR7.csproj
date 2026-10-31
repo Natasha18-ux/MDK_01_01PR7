@@ -64,8 +64,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="classes\gemFig.cs" />
-    <Compile Include="classes\Round.cs" />
-    <Compile Include="classes\Trangl.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
